@@ -11,7 +11,7 @@ class Yamll < Formula
   on_macos do
     on_intel do
       url "https://github.com/nikhilsbhat/yamll/releases/download/v0.0.3/yamll_0.0.3_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fb0a0317f1fb9789b7ca48977dc2045569dd80f5ed1d43ddfa0d3d3324a22aa4"
+      sha256 "6225cf93df1623e24792c4a3aef4c5a39b4cee0ed08e8678ab8c8fa0d50a3ded"
 
       def install
         bin.install "yamll"
@@ -19,7 +19,7 @@ class Yamll < Formula
     end
     on_arm do
       url "https://github.com/nikhilsbhat/yamll/releases/download/v0.0.3/yamll_0.0.3_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5be7bba72f42e8da56f876b5fe79bab125cc08ad2f28d3cd6228c89cc667f3ea"
+      sha256 "c9f6d9a5932a1f75bb9d2f031307260bfac2f6f084692d98e397a8bfa5d0a537"
 
       def install
         bin.install "yamll"
@@ -31,7 +31,7 @@ class Yamll < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/nikhilsbhat/yamll/releases/download/v0.0.3/yamll_0.0.3_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "b6ac5cc1f9e16551ca6436acae7cf319e20f9f74a85a63abb81a746b8a520e0b"
+        sha256 "3af2818dc590d9f75e8da7377b9c57c2961afb69fc8786c5a7ba0332b43aa73c"
 
         def install
           bin.install "yamll"
@@ -41,7 +41,7 @@ class Yamll < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/nikhilsbhat/yamll/releases/download/v0.0.3/yamll_0.0.3_linux_arm.tar.gz", using: CurlDownloadStrategy
-        sha256 "d044adc4acae9549287d2dbe9069929b35e15df8b3f05b4ba8e282f8e9da0316"
+        sha256 "db15ba7e8eae315558b97b0514bef0531f040dbc1f16604e52c0d6f1e0ba5d86"
 
         def install
           bin.install "yamll"
@@ -51,7 +51,7 @@ class Yamll < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/nikhilsbhat/yamll/releases/download/v0.0.3/yamll_0.0.3_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "aaa8cc41d966d0895562e47d9bacbeee0af2e79442ee3ea8b2b98b5ba4de1eb2"
+        sha256 "9667f15063a98f9186a981dce082ab1e01ee98bf6081fdc196eb055032f80c9d"
 
         def install
           bin.install "yamll"
