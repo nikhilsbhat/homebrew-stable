@@ -1,0 +1,5 @@
+
+# dropping IDE data's
+.vscode
+.idea
+.DS_Store
