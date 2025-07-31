@@ -5,21 +5,21 @@
 class GocdCli < Formula
   desc "A command-line tool for interacting with GoCD"
   homepage "https://github.com/nikhilsbhat/gocd-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.0/gocd-cli_0.3.0_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c562e0c373111acc7711ada31aa3fca755d3309d553c84c8e07dfc5fdf1a255f"
+      url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.1/gocd-cli_0.3.1_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2ac4d5092f41e853d57aeefdae7eb0c189786d3002a3704d4939db1a3b84c616"
 
       def install
         bin.install "gocd-cli"
       end
     end
     on_arm do
-      url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.0/gocd-cli_0.3.0_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7dbb2e3bd7c4fc770fa844f1533d85a21ca4b3b68f3ec3271603c125e315ce9a"
+      url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.1/gocd-cli_0.3.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "cfe4d45fcabcc2a6fd7289bedc969a6a935301cfaca093ccbbf6d07d1249e030"
 
       def install
         bin.install "gocd-cli"
@@ -30,8 +30,8 @@ class GocdCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.0/gocd-cli_0.3.0_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "1482206d8c0ca1116cb9d3c3ff0926fdd8218cea86eccc463c4356163d5a46d2"
+        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.1/gocd-cli_0.3.1_linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "68f3798f7c9ff9b47b2a8a9d68c78d5ad88544dcb7d1e2be145675f43c04c9ee"
 
         def install
           bin.install "gocd-cli"
@@ -40,8 +40,8 @@ class GocdCli < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.0/gocd-cli_0.3.0_linux_arm.tar.gz", using: CurlDownloadStrategy
-        sha256 "9bf27e64f7f101c6e91032561ef2287b2f3ed142fd9e51b838e19ffb158d5921"
+        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.1/gocd-cli_0.3.1_linux_arm.tar.gz", using: CurlDownloadStrategy
+        sha256 "7195f7bce76e62c33072f957b7677e3caceb47b5509a30829b17f3655c3250e1"
 
         def install
           bin.install "gocd-cli"
@@ -50,8 +50,8 @@ class GocdCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.0/gocd-cli_0.3.0_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "97cabc0ec12ff88d679709aea2a1cb7284328ae6b7cc35d61398c31d4921de39"
+        url "https://github.com/nikhilsbhat/gocd-cli/releases/download/v0.3.1/gocd-cli_0.3.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "daba5ea737b533e88ebc1ada2325d087b444d57b88570eabc620a5bd6f75e36a"
 
         def install
           bin.install "gocd-cli"
