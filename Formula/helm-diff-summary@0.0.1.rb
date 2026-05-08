@@ -14,22 +14,22 @@ cask "helm-diff-summary@0.0.1" do
   on_macos do
     on_intel do
       url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v#{version}/helm-diff-summary_#{version}_darwin_x86_64.tar.gz"
-      sha256 "a028469890a60570ff9a3f0a69e766f8862885941f7928dc3f9d0754194d2ba2"
+      sha256 "0be170b0a9b55416e120137e83c54a603b08cc097a6fc24f5b2623ac3c022a9e"
     end
     on_arm do
       url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v#{version}/helm-diff-summary_#{version}_darwin_arm64.tar.gz"
-      sha256 "3d05f8b19a67e48765d2b777cec82f86bf28194994e0a54acd62041dd0046bd9"
+      sha256 "d31de5e6f34c5f5b1b7d9f856c6d812a013d50ea43b2cd9929f0c0f09dd975d4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v#{version}/helm-diff-summary_#{version}_linux_x86_64.tar.gz"
-      sha256 "fa7ceb99bab9f5f869afee472fce66d1a5a0ca8a42a198631b5cdecb2cf69006"
+      sha256 "df9477661ef1374b1e8d8c99ab7680b42079e268f502e3f18fb4ce47207e2818"
     end
     on_arm do
       url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v#{version}/helm-diff-summary_#{version}_linux_arm64.tar.gz"
-      sha256 "5806efc0d957227e7a74dfc223b75256e73c622cc4db145350e13af132e9fba8"
+      sha256 "93fd53e552a218f264b3fcafcf4669c8b921de79be5e66569e72940ee7c08786"
     end
   end
 
