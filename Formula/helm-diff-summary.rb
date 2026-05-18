@@ -5,21 +5,21 @@
 class HelmDiffSummary < Formula
   desc "helm-diff-summary summarizes helm diff output into a concise Terraform-style deployment plan"
   homepage "https://github.com/nikhilsbhat/helm-diff-summary"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.1/helm-diff-summary_0.0.1_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f667eedbe399f0bfa58e7165da6ccc6e4ad2fb6711f1be0165c96ecb2ac3c632"
+      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.2/helm-diff-summary_0.0.2_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2a7ed9f2b5d9dae4b5c7f78d7bb50ea316b935bd1b75166205e4000bd31941a9"
 
       define_method(:install) do
         bin.install "helm-diff-summary"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.1/helm-diff-summary_0.0.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "120b4fc3c2fa07e256256df2fe8edb83396200d7ae8fa6ccff01a8a93f4386b1"
+      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.2/helm-diff-summary_0.0.2_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "5309205c11e8b4aa8bd69b0dc0047fe02ba57ece952611b23e4004b2c412f2f7"
 
       define_method(:install) do
         bin.install "helm-diff-summary"
@@ -29,22 +29,22 @@ class HelmDiffSummary < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.1/helm-diff-summary_0.0.1_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "73ffa260440244271ba0730cd641188677740068cf2bc6521af9ffb5a378047c"
+      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.2/helm-diff-summary_0.0.2_linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "c616317fd9b16f1a903246849c941a806ec74bd076d58ca1dd1f4b4fb4345503"
       define_method(:install) do
         bin.install "helm-diff-summary"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.1/helm-diff-summary_0.0.1_linux_arm.tar.gz", using: CurlDownloadStrategy
-      sha256 "fc05dbe1fc77b547c00ca49608d5b569d85f8929c51efb89b509598bd95935fd"
+      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.2/helm-diff-summary_0.0.2_linux_arm.tar.gz", using: CurlDownloadStrategy
+      sha256 "bf5f07dc11ffc96e5c58d2d141e1e39ad2cd1f20b603adfccf8dd6d42127b8cc"
       define_method(:install) do
         bin.install "helm-diff-summary"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.1/helm-diff-summary_0.0.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "302f89f125b26cdd887734315bfc4e16a9f51a4afd3b544e75423fe05f0fcc5d"
+      url "https://github.com/nikhilsbhat/helm-diff-summary/releases/download/v0.0.2/helm-diff-summary_0.0.2_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "fbb723c3ae639717bcb2eca1cc0af69e669ca8fd7b62eef1018d062908bea9f0"
       define_method(:install) do
         bin.install "helm-diff-summary"
       end
