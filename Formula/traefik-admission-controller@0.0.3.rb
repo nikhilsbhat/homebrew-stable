@@ -11,7 +11,7 @@ class TraefikAdmissionControllerAT003 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nikhilsbhat/traefik-admission-controller/releases/download/v0.0.3/traefik-admission-controller_0.0.3_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bf51877643aaace13c7517ab2929d67bcb97abb8fe0396fd71f8c56d477afa44"
+      sha256 "d6447d7a799354d62dd051707d8a74f253ffa37df4c6c8c22c93276775e90044"
 
       define_method(:install) do
         bin.install "traefik-admission-controller"
@@ -19,7 +19,7 @@ class TraefikAdmissionControllerAT003 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nikhilsbhat/traefik-admission-controller/releases/download/v0.0.3/traefik-admission-controller_0.0.3_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "b708e8f99a79dd893fd94dd2a41e7afae486cd4f5a4abbaabdda90d0961deb79"
+      sha256 "b77fcb53b4c0fe46da6e7f3197880546a1cd53da5c13808f651bccc6a2fca0d5"
 
       define_method(:install) do
         bin.install "traefik-admission-controller"
@@ -30,21 +30,21 @@ class TraefikAdmissionControllerAT003 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikhilsbhat/traefik-admission-controller/releases/download/v0.0.3/traefik-admission-controller_0.0.3_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "cfd034733144e2dc37c0404c12c18556f0c5b28dc2119b763c028f13f265ecdb"
+      sha256 "81f87e0b2d69357d3ddbb03a892eb359a3be56f263bff659741300f84fbe3d96"
       define_method(:install) do
         bin.install "traefik-admission-controller"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/nikhilsbhat/traefik-admission-controller/releases/download/v0.0.3/traefik-admission-controller_0.0.3_linux_arm.tar.gz", using: CurlDownloadStrategy
-      sha256 "3cf51b1441ad42ef5354a19fbee352d5ace6dad4280c53478f7bdf048ec815d5"
+      sha256 "8cb9ab89f581d84497b537ba48aa1bde8884f32fb3045c3a4e843a689670ad98"
       define_method(:install) do
         bin.install "traefik-admission-controller"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikhilsbhat/traefik-admission-controller/releases/download/v0.0.3/traefik-admission-controller_0.0.3_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "6f70f0bda2017b042ecb45510b37a51f3da1d6f1e533e08b872c6b4a64eb8238"
+      sha256 "4b6aa6253ae76fd4ac6c7656af09efb9909315bafc0c20b11f1e7a81158a541a"
       define_method(:install) do
         bin.install "traefik-admission-controller"
       end
